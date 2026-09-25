@@ -17,18 +17,3 @@ if('IntersectionObserver' in window){
 }
 document.addEventListener('visibilitychange',syncSectionMotion);
 syncSectionMotion();
-
-const heroArt=document.querySelector('.hero-art');
-if(heroArt){
-  let inView=true;
-  const syncHeroMotion=()=>heroArt.classList.toggle('motion-paused',!inView||document.hidden);
-  const beginHeroMotion=()=>{heroArt.classList.add('motion-ready');syncHeroMotion()};
-  if(heroArt.decode){heroArt.decode().then(beginHeroMotion).catch(beginHeroMotion)}
-  else if(heroArt.complete){beginHeroMotion()}
-  else{heroArt.addEventListener('load',beginHeroMotion,{once:true})}
-  if('IntersectionObserver' in window){
-    const visibility=new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;syncHeroMotion()},{threshold:0});
-    visibility.observe(heroArt.parentElement);
-  }
-  document.addEventListener('visibilitychange',syncHeroMotion);
-}

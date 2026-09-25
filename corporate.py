@@ -12,9 +12,6 @@ def build_corporate():
   </div>
   <div class="wrap hero-bottom"><a class="scroll-cue" href="#purpose"><span>SCROLL TO EXPLORE</span><i aria-hidden="true"></i></a><span>PRODUCTS / DEVELOPMENT / CONSULTING</span></div>
 </section>
-<section class="brand-film" aria-label="医院の毎日に、役立つテクノロジーを。">
- <div class="brand-film-frame"><img class="hero-art" src="/assets/hero.webp" alt="" width="1536" height="1024" fetchpriority="high"><div class="film-shade" aria-hidden="true"></div><div class="film-caption"><span>IDEAS INTO VALUE.</span><p>医院の毎日に、<br>役立つテクノロジーを。</p></div><span class="film-index" aria-hidden="true">CRESTIX — CONNECTING THE NEXT</span></div>
-</section>
 <section class="editorial-section purpose-section" id="purpose"><div class="wrap editorial-grid">
  <div class="section-title reveal"><span class="section-number">01</span><h2>Our<br>Purpose</h2><p>私たちが目指すこと</p></div>
  <div class="editorial-copy reveal"><h3>医院の可能性を、<br>もっと、その先へ。</h3><p>いい医療が、必要としている人に届くこと。<br>その出会いが、信頼へとつながっていくこと。</p><p>私たちは、クリニックの患者接点をデジタルでつなぐ会社です。日々の運用を支えるプロダクトと、医院ごとの課題に向き合うWebコンサルティング。その両面から、続けられる成長の仕組みをつくります。</p><a class="text-link" href="/company/">Crestixについて<span class="arrow-circle" aria-hidden="true">↗</span></a></div>
