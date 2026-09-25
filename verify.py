@@ -60,7 +60,7 @@ for page in pages:
             if unquote(url.fragment) not in linked.ids:
                 errors.append(f'{page}: missing anchor: {ref}')
 
-assert len(pages) == 10, f'Expected 10 pages, found {len(pages)}'
+assert len(pages) == 13, f'Expected 13 pages, found {len(pages)}'
 assert 'クリニックの成長を、' in (base / 'index.html').read_text()
 assert 'AIとデジタルで。' in (base / 'index.html').read_text()
 assert (base / '.nojekyll').is_file()
