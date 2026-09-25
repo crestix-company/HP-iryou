@@ -115,11 +115,15 @@
 @media(max-width:440px){.product-collage img{width:49%}.product-collage img:nth-child(1){left:4%;top:30%}.product-collage img:nth-child(2){left:32%;top:15%}.product-collage img:nth-child(3){width:43%;bottom:14%;right:4%}.business-art{height:195px}.business-card h3{font-size:21px}.business-card-copy{padding:23px}.business-card-link{font-size:13px}.destination-card h2{font-size:27px}.destination-card p{font-size:14px}.destination-symbol{right:22px;opacity:.08}.company dl>div{grid-template-columns:86px 1fr}.footer-service-nav>div{grid-template-columns:1fr 1fr;font-size:12px}}
 @media(max-width:380px){.business-card h3{font-size:19px}.business-card-copy{padding:21px}.page-intro h1{font-size:32px}.page-lead{font-size:19px}.development-hero h1{font-size:27px}.development-hero .page-lead{font-size:17px}.development-map{max-width:280px}.dev-map-node{width:72px;height:72px}.node-design{left:calc(50% - 36px)}.dev-map-core strong{font-size:21px;gap:9px}.company-wordmark{font-size:60px}.company dl>div{grid-template-columns:1fr;gap:6px}.footer-service-nav>div{grid-template-columns:1fr}.footer-corporate-nav{grid-template-columns:1fr}.destination-card{padding:24px}.destination-card h2{font-size:25px}}
 
-/* Keep the hero on a stable compositing layer; animate position only. */
+/* A visible, continuous sway using only the composited transform layer. */
 .header{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}
 .hero{isolation:isolate;contain:paint}
-.hero-art{mix-blend-mode:normal;will-change:transform;backface-visibility:hidden;transform:translate3d(0,0,0) scale(1.04);animation:hero-drift 16s cubic-bezier(.45,0,.55,1) infinite alternate;animation-play-state:paused}
+.hero-art{--hero-x:20px;--hero-y:22px;--hero-angle:1.6deg;--hero-scale:1.14;mix-blend-mode:normal;will-change:transform;backface-visibility:hidden;transform-origin:55% 50%;transform:translate3d(0,0,0) rotate(0deg) scale(var(--hero-scale));animation:hero-drift 7s ease-in-out -3.5s infinite alternate;animation-play-state:paused}
 .hero-art.motion-ready{animation-play-state:running}
 .hero-art.motion-paused{animation-play-state:paused}
-@keyframes hero-drift{from{transform:translate3d(0,0,0) scale(1.04)}to{transform:translate3d(0,-14px,0) scale(1.04)}}
+@keyframes hero-drift{
+ from{transform:translate3d(calc(-1 * var(--hero-x)),var(--hero-y),0) rotate(calc(-1 * var(--hero-angle))) scale(var(--hero-scale))}
+ to{transform:translate3d(var(--hero-x),calc(-1 * var(--hero-y)),0) rotate(var(--hero-angle)) scale(var(--hero-scale))}
+}
+@media(max-width:800px){.hero-art{--hero-x:10px;--hero-y:12px;--hero-angle:2deg;--hero-scale:1.16}}
 @media(prefers-reduced-motion:reduce){.hero-art{will-change:auto;transform:none;animation:none!important}}
