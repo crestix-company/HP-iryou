@@ -6,9 +6,9 @@ BASE_PATH=os.environ.get('SITE_BASE_PATH','').rstrip('/')
 if BASE_PATH and (not BASE_PATH.startswith('/') or '..' in BASE_PATH):
  raise ValueError('SITE_BASE_PATH must be an absolute URL path prefix')
 services=[
+{'slug':'medical-target-plus','name':'Medical Target +','tag':'ターゲティング広告','short':'比較・検討のタイミングを、逃さない。','desc':'診療圏や関心に合わせて配信対象を設計。医院を検討する方へ、貴院の特徴を届けます。','color':'navy','visual':'target'},
 {'slug':'medical-map','name':'Medical Map','tag':'MEO・Googleマップ運用','short':'地域の検索から、来院のきっかけを。','desc':'医院情報の整備から投稿・口コミ返信、順位の確認まで。Googleマップの運用を継続的に支えます。','color':'','visual':'map'},
 {'slug':'medical-map-plus','name':'Medical Map +','tag':'Googleマップ広告','short':'いま近くで探している人に、届ける。','desc':'地域と診療科に合わせて広告を配信。Googleマップで医院を探す患者さまとの接点をつくります。','color':'violet','visual':'mapad'},
-{'slug':'medical-target-plus','name':'Medical Target +','tag':'ターゲティング広告','short':'比較・検討のタイミングを、逃さない。','desc':'診療圏や関心に合わせて配信対象を設計。医院を検討する方へ、貴院の特徴を届けます。','color':'navy','visual':'target'},
 {'slug':'survey-plus','name':'アンケートプラス','tag':'患者アンケート・口コミ支援','short':'患者さまの声を、医院の力に。','desc':'来院後の声を集め、院内改善と口コミの接点へ。患者体験を知る仕組みを整えます。','color':'teal','visual':'survey'},
 {'slug':'line-plus','name':'LINEプラス','tag':'LINE拡張ツール・運用支援','short':'来院した、その先もつながる。','desc':'タグ管理、配信の自動化、予約への案内まで。LINE拡張ツールで、患者さまとの接点を整えます。','color':'green','visual':'line'},
 {'slug':'mynavi-clinic','name':'マイナビクリニックナビ','tag':'メディア掲載支援','short':'医院の魅力に、出会う場所を増やす。','desc':'地域・診療科で医院を探す方へ、紹介記事でアプローチ。掲載に向けた準備を支援します。','color':'sand','visual':'media'}]
