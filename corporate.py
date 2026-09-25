@@ -5,33 +5,30 @@ from build import OUT, services, card, write, breadcrumb, cta
 def build_corporate():
     home = '''
 <section class="hero corporate-home-hero">
-  <img class="hero-art" src="/assets/hero.webp" alt="" width="1536" height="1024" fetchpriority="high">
+  <div class="line-field" aria-hidden="true"><svg viewBox="0 0 1600 700" preserveAspectRatio="none"><g class="line-wave wave-one"><path d="M -180 460 C 180 220, 500 150, 830 280 S 1290 350, 1780 150"/><path d="M -180 473 C 180 225, 500 162, 830 290 S 1290 340, 1780 168"/><path d="M -180 486 C 180 230, 500 174, 830 300 S 1290 330, 1780 186"/><path d="M -180 499 C 180 235, 500 186, 830 310 S 1290 320, 1780 204"/><path d="M -180 512 C 180 240, 500 198, 830 320 S 1290 310, 1780 222"/><path d="M -180 525 C 180 245, 500 210, 830 330 S 1290 300, 1780 240"/><path d="M -180 538 C 180 250, 500 222, 830 340 S 1290 290, 1780 258"/><path d="M -180 551 C 180 255, 500 234, 830 350 S 1290 280, 1780 276"/><path d="M -180 564 C 180 260, 500 246, 830 360 S 1290 270, 1780 294"/><path d="M -180 577 C 180 265, 500 258, 830 370 S 1290 260, 1780 312"/><path d="M -180 590 C 180 270, 500 270, 830 380 S 1290 250, 1780 330"/></g><g class="line-wave wave-two"><path d="M -180 460 C 180 220, 500 150, 830 280 S 1290 350, 1780 150"/><path d="M -180 473 C 180 225, 500 162, 830 290 S 1290 340, 1780 168"/><path d="M -180 486 C 180 230, 500 174, 830 300 S 1290 330, 1780 186"/><path d="M -180 499 C 180 235, 500 186, 830 310 S 1290 320, 1780 204"/><path d="M -180 512 C 180 240, 500 198, 830 320 S 1290 310, 1780 222"/><path d="M -180 525 C 180 245, 500 210, 830 330 S 1290 300, 1780 240"/><path d="M -180 538 C 180 250, 500 222, 830 340 S 1290 290, 1780 258"/></g></svg></div>
   <div class="wrap hero-inner">
-    <div class="eyebrow">CLINIC GROWTH PARTNER</div>
-    <h1>クリニックの成長を、<br><em>AIとデジタルで。</em></h1>
-    <p class="hero-copy">クリニック向けプロダクトと、Webコンサルティング。<br>AIを活かした開発・分析・制作で、<br>医院の集患と、患者さまとの接点づくりを支えます。</p>
-    <div class="hero-actions"><a class="button" href="/products/">サービスを見る<span class="arrow" aria-hidden="true">↗</span></a><a class="text-link" href="/company/">Crestixについて<span aria-hidden="true">↗</span></a></div>
+    <div class="hero-heading"><p class="hero-kicker">CRESTIX / TECHNOLOGY FOR CLINICS</p><h1><span>TECHNOLOGY</span><span>FOR CLINIC</span><span>GROWTH.</span></h1></div>
+    <div class="hero-message"><p class="hero-japanese">クリニックの成長を、<br>AIとデジタルで。</p><p class="hero-copy">クリニック向けプロダクトと、<br>Webコンサルティング。</p><a class="text-link" href="/products/">私たちのサービス<span class="arrow-circle" aria-hidden="true">↗</span></a></div>
   </div>
-  <span class="hero-side">CRESTIX — PRODUCTS &amp; WEB CONSULTING</span>
+  <div class="wrap hero-bottom"><a class="scroll-cue" href="#purpose"><span>SCROLL TO EXPLORE</span><i aria-hidden="true"></i></a><span>PRODUCTS / DEVELOPMENT / CONSULTING</span></div>
 </section>
-<section class="section home-business">
-  <div class="wrap">
-    <div class="section-head reveal"><div><div class="eyebrow">OUR BUSINESS</div><h2>プロダクトと戦略で、<br>医院の次の一歩を。</h2></div><p>必要な仕組みを届けること。<br>その仕組みを、医院の成長につなげること。<br>Crestixは、その両方に取り組みます。</p></div>
-    <div class="business-grid">
-      <a class="business-card reveal" href="/products/">
-        <div class="business-art product-collage" aria-hidden="true"><img src="/assets/medical-map.webp" alt="" width="1440" height="810" loading="lazy"><img src="/assets/medical-target-plus.webp" alt="" width="1440" height="810" loading="lazy"><img src="/assets/line-plus.webp" alt="" width="1440" height="810" loading="lazy"></div>
-        <div class="business-card-copy"><span class="business-label">01 / PRODUCTS &amp; SERVICES</span><h3>クリニック向けプロダクト</h3><p>地図検索、広告、口コミ、LINE、メディア。<br>6つのサービスで、患者さまとの接点を整えます。</p><span class="business-card-link">プロダクト一覧へ<span class="arrow-circle" aria-hidden="true">↗</span></span></div>
-      </a>
-      <a class="business-card reveal" href="/consulting/">
-        <div class="business-art"><img class="business-photo" src="/assets/consulting.webp" alt="データをもとに医院の施策を検討する様子" width="1536" height="1024" loading="lazy"></div>
-        <div class="business-card-copy"><span class="business-label">02 / WEB CONSULTING</span><h3>Webコンサルティング</h3><p>医院の課題を整理し、戦略から実行・改善へ。<br>専属コンサルタントが、次の一手を設計します。</p><span class="business-card-link">Webコンサルティングへ<span class="arrow-circle" aria-hidden="true">↗</span></span></div>
-      </a>
-    </div>
-  </div>
+<section class="brand-film" aria-label="医院の毎日に、役立つテクノロジーを。">
+ <div class="brand-film-frame"><img class="hero-art" src="/assets/hero.webp" alt="" width="1536" height="1024" fetchpriority="high"><div class="film-shade" aria-hidden="true"></div><div class="film-caption"><span>IDEAS INTO VALUE.</span><p>医院の毎日に、<br>役立つテクノロジーを。</p></div><span class="film-index" aria-hidden="true">CRESTIX — CONNECTING THE NEXT</span></div>
 </section>
-<section class="home-links"><div class="wrap home-links-grid">
-  <a class="destination-card development-destination reveal" href="/development/"><div class="eyebrow">AI &amp; DEVELOPMENT</div><h2>AIを活かした、<br>つくる力。</h2><p>設計・実装・改善にAIを活用。<br>医院の課題を、使える仕組みに。</p><span>AIを活用した開発<span class="arrow-circle" aria-hidden="true">↗</span></span><div class="destination-symbol" aria-hidden="true">AI<span>+</span></div></a>
-  <a class="destination-card company-destination reveal" href="/company/"><div class="eyebrow">COMPANY</div><h2>医療の可能性を、<br>デジタルでひらく。</h2><p>クリニックの隣で、考え続ける。<br>Crestixの考え方と会社情報をご紹介します。</p><span>私たちについて<span class="arrow-circle" aria-hidden="true">↗</span></span></a>
+<section class="editorial-section purpose-section" id="purpose"><div class="wrap editorial-grid">
+ <div class="section-title reveal"><span class="section-number">01</span><h2>Our<br>Purpose</h2><p>私たちが目指すこと</p></div>
+ <div class="editorial-copy reveal"><h3>医院の可能性を、<br>もっと、その先へ。</h3><p>いい医療が、必要としている人に届くこと。<br>その出会いが、信頼へとつながっていくこと。</p><p>私たちは、クリニックの患者接点をデジタルでつなぐ会社です。日々の運用を支えるプロダクトと、医院ごとの課題に向き合うWebコンサルティング。その両面から、続けられる成長の仕組みをつくります。</p><a class="text-link" href="/company/">Crestixについて<span class="arrow-circle" aria-hidden="true">↗</span></a></div>
+</div></section>
+<section class="editorial-section business-section"><div class="wrap">
+ <div class="editorial-grid business-heading"><div class="section-title reveal"><span class="section-number">02</span><h2>Our<br>Business</h2><p>事業紹介</p></div><div class="editorial-copy reveal"><h3>プロダクトと戦略で、<br>医院の次の一歩を。</h3><p>必要な仕組みを届けること。<br>その仕組みを、医院の成長につなげること。<br>Crestixは、その両方に取り組みます。</p></div></div>
+ <div class="business-grid">
+  <a class="business-card reveal" href="/products/"><div class="business-card-copy"><div class="business-card-heading"><h3>Products</h3><span class="business-count">01</span></div><span class="business-label">クリニック向けプロダクト</span><p>地図検索、広告、口コミ、LINE、メディア。<br>6つのサービスで、患者さまとの接点を整えます。</p></div><div class="business-art product-collage" aria-hidden="true"><img src="/assets/medical-map.webp" alt="" width="1440" height="810" loading="lazy"><img src="/assets/medical-target-plus.webp" alt="" width="1440" height="810" loading="lazy"><img src="/assets/line-plus.webp" alt="" width="1440" height="810" loading="lazy"></div><span class="business-card-link">プロダクト一覧へ<span class="arrow-circle" aria-hidden="true">↗</span></span></a>
+  <a class="business-card reveal" href="/consulting/"><div class="business-card-copy"><div class="business-card-heading"><h3>Web Consulting</h3><span class="business-count">02</span></div><span class="business-label">Webコンサルティング</span><p>医院の課題を整理し、戦略から実行・改善へ。<br>専属コンサルタントが、次の一手を設計します。</p></div><div class="business-art"><img class="business-photo" src="/assets/consulting.webp" alt="データをもとに医院の施策を検討する様子" width="1536" height="1024" loading="lazy"></div><span class="business-card-link">Webコンサルティングへ<span class="arrow-circle" aria-hidden="true">↗</span></span></a>
+ </div>
+</div></section>
+<section class="editorial-section ai-section"><div class="wrap editorial-grid">
+ <div class="section-title reveal"><span class="section-number">03</span><h2>AI &amp;<br>Human</h2><p><span class="title-part">AIを活かした開発と</span><wbr><span class="title-part">コンサルティング</span></p><div class="ai-wire" aria-hidden="true"><div class="wire-sphere"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>DESIGN / DEVELOP / IMPROVE</span></div></div>
+ <div class="editorial-copy reveal"><h3>AIの力と、<br>人の知見。その両方で。</h3><p>AIを、設計・実装・分析・制作のプロセスへ。<br>技術の力を活かしながら、担当者が内容を確認し、医院ごとの課題に向き合います。</p><p>何をつくるかだけでなく、どう役立てるかまで。<br>開発とWebコンサルティングをつなぎ、医院に合う仕組みを形にします。</p><a class="text-link" href="/development/">AIを活用した開発<span class="arrow-circle" aria-hidden="true">↗</span></a></div>
 </div></section>
 ''' + cta()
     write(Path('index.html'), 'クリニックの成長を、AIとデジタルで。', 'クリニック向けプロダクトとWebコンサルティングのCrestix。AIを活かした開発・分析・制作で、医院の成長を支援します。', home)
